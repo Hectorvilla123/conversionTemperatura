@@ -10,7 +10,7 @@ function conversionTemperatura (){
         let kelvin = celsius + 273.5;
 
         document.getElementById("conversion").innerHTML = `
-            temperatura en Celsius: ${celsius}°C<br> 
+            Temperatura en Celsius: ${celsius}°C<br> 
             Temperatura en Fahrenheit: ${fahrenheit}°F<br>
             Temperatura en Kelvin: ${kelvin}K
         `;
