@@ -9,9 +9,11 @@ function conversionTemperatura (){
         let fahrenheit = (celsius * 9/5) + 32;
         let kelvin = celsius + 273.5;
 
-        console.log(`Temperatura en Fahrenheit: ${fahrenheit}°F`);
-        console.log(`Temperatura en Kelvin: ${kelvin}K`);
-
+        document.getElementById("conversion").innerHTML = `
+            temperatura en Celsius: ${celsius}°C<br> 
+            Temperatura en Fahrenheit: ${fahrenheit}°F<br>
+            Temperatura en Kelvin: ${kelvin}K
+        `;
     }
 }
 conversionTemperatura();
