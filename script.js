@@ -1,3 +1,5 @@
+const conversionContainer = document.getElementById("conversion");
+
 function conversionTemperatura (){
     let celsius = prompt("Ingrese un numero para la conversion: ");
 
@@ -9,7 +11,7 @@ function conversionTemperatura (){
         let fahrenheit = (celsius * 9/5) + 32;
         let kelvin = celsius + 273.5;
 
-        document.getElementById("conversion").innerHTML = `
+        conversionContainer.innerHTML = `
             Temperatura en Celsius: ${celsius}°C<br> 
             Temperatura en Fahrenheit: ${fahrenheit}°F<br>
             Temperatura en Kelvin: ${kelvin}K
